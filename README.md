@@ -40,6 +40,7 @@ Lista de los 27 tags:
 ## Dependencias
 Para el correcto funcionamiento del plugin se necesita
 - [LuckPerms](https://luckperms.net/)
+- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
 
 
 
