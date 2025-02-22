@@ -1,0 +1,214 @@
+# DeluxeTags version: 1.8.2-Release Main Configuration
+#
+# Create your tags using the following format:
+#
+# deluxetags:
+#   VIP: 
+#     order: 1
+#     tag: '&7[&eVIP&7]'
+#     description: 'This tag is awarded by getting VIP'
+#
+# Placeholders for your chat plugin that supports PlaceholderAPI (Including DeluxeChat)
+#
+# %deluxetags_identifier% - display the players active tag identifier
+# %deluxetags_tag% - display the players active tag
+# %deluxetags_description% - display the players active tag description
+# %deluxetags_amount% - display the amount of tags a player has access to
+#
+# Placeholders for your essentials/chat handling formats config:
+#
+# {deluxetags_identifier} - display the players active tag identifier
+# {deluxetags_tag} - display the players active tag
+# {deluxetags_description} - display the players active tag description
+# {deluxetags_amount} - display the amount of tags a player has access to
+
+force_tags: false
+check_updates: true
+legacy_hex: false
+papi_chat: true
+format_chat:
+  enabled: false
+  format: '{deluxetags_tag} <%1$s> %2$s'
+load_tag_on_join: true
+gui:
+  name: '&6&lEtiquetas disponibles&f: &6%deluxetags_amount%'
+  tag_select_item:
+    material: NAME_TAG
+    data: 0
+    displayname: '%deluxetags_tag%'
+    lore:
+    - '%deluxetags_description%'
+    - ''
+    - '&eEjemplo: %deluxetags_tag% &f%player%'
+  divider_item:
+    material: BLACK_STAINED_GLASS_PANE
+    data: 0
+    displayname: '&7'
+    lore: []
+  has_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&eEtiqueta actual&f: &6%deluxetags_identifier%'
+    lore:
+    - '%deluxetags_tag%'
+    - Haga clic para eliminar su etiqueta actual
+  no_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&cNo tienes una etiqueta establecida!'
+    lore:
+    - '&7Haga clic en una etiqueta de arriba para seleccionar una!'
+  exit_item:
+    material: IRON_DOOR
+    data: 0
+    displayname: '&cHaga click para salir'
+    lore:
+    - '&7Salir del menú de etiquetas'
+  next_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Siguiente pagina: %page%'
+    lore:
+    - '&7Pasar a la página siguiente'
+  previous_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Pagina anterior: %page%'
+    lore:
+    - '&7Ir a la página anterior'
+deluxetags:
+  zGen:
+    order: 1
+    tag: '&8[&bzGen&8]'
+    description: '&fPremiado por jugar en zGen!'
+    permission: deluxetags.tag.example
+  Aventurero:
+    order: 2
+    tag: '&7[&6Aventurero&7]'
+    description: '&fWOW! cuanto caminaste para llegar hasta aqui?'
+    permission: deluxetags.tag.aventurero
+  Minero:
+    order: 3
+    tag: '&7[&8Minero&7]'
+    description: '&fWOW! En serio picaste tanto?'
+    permission: deluxetags.tag.minero
+  Asesino:
+    order: 4
+    tag: '&7[&4Asesino&7]'
+    description: '&fDespues de todo en verdad eras muy letal'
+    permission: deluxetags.tag.asesino
+  Toxic:
+    order: 5
+    tag: '&7[&2Toxic&7]'
+    description: '&fNo pense que serias de esos...'
+    permission: deluxetags.tag.toxic
+  Insano:
+    order: 6
+    tag: '&7[&eInsano&7]'
+    description: '&fDesde cuando es tan lindo jugar minecraft asi?'
+    permission: deluxetags.tag.insano
+  Guerrero:
+    order: 7
+    tag: '&7[&cGuerrero&7]'
+    description: '&fLucha hasta el final sin miedo'
+    permission: deluxetags.tag.guerrero
+  Mago:
+    order: 8
+    tag: '&7[&bMago&7]'
+    description: '&fEl poder de la magia está en tus manos.'
+    permission: deluxetags.tag.mago
+  Leyenda:
+    order: 9
+    tag: '&7[&dLeyenda&7]'
+    description: '&fTu nombre quedará en la historia del servidor.'
+    permission: deluxetags.tag.leyenda
+  Sigiloso:
+    order: 10
+    tag: '&7[&9Sigiloso&7]'
+    description: '&fNadie te ve, pero todos te temen.'
+    permission: deluxetags.tag.sigiloso
+  Fantasma:
+    order: 11
+    tag: '&7[&7Fantasma&7]'
+    description: '&fTe ven, pero ya es demasiado tarde.'
+    permission: deluxetags.tag.fantasma
+  Demonio:
+    order: 12
+    tag: '&7[&4Demonio&7]'
+    description: '&fTu poder arde como el mismísimo Nether.'
+    permission: deluxetags.tag.demonio
+  Inmortal:
+    order: 13
+    tag: '&7[&2Inmortal&7]'
+    description: '&fNada puede detenerte en tu camino.'
+    permission: deluxetags.tag.inmortal
+  Nostalgico:
+    order: 14
+    tag: '&7[&5Nostalgico&7]'
+    description: '&fRecuerdas cuando Minecraft era solo bloques y aventuras.'
+    permission: deluxetags.tag.nostalgico
+  Visionario:
+    order: 15
+    tag: '&7[&9Visionario&7]'
+    description: '&fTu creatividad no tiene fronteras.'
+    permission: deluxetags.tag.visionario
+  Fenix:
+    order: 16
+    tag: '&7[&cFénix&7]'
+    description: '&fRenaces de las cenizas más fuerte que nunca.'
+    permission: deluxetags.tag.fenix
+  Forjador:
+    order: 17
+    tag: '&7[&6Forjador&7]'
+    description: '&fCreas herramientas que duran toda una vida.'
+    permission: deluxetags.tag.Forjador
+  Gladiador:
+    order: 18
+    tag: '&7[&9Gladiador&7]'
+    description: '&fEl coliseo es tu segunda casa.'
+    permission: deluxetags.tag.gladiador
+  Exiliado:
+    order: 19
+    tag: '&7[&8Exiliado&7]'
+    description: '&fNo perteneces a ningún lugar, pero dominas todos.'
+    permission: deluxetags.tag.exiliado
+  Pirata:
+    order: 20
+    tag: '&7[&3Pirata&7]'
+    description: '&fLos mares te pertenecen, el botín es tuyo.'
+    permission: deluxetags.tag.pirata
+  Corrupto:
+    order: 21
+    tag: '&7[&0Corrupto&7]'
+    description: '&fEres la oscuridad en su máxima expresión.'
+    permission: deluxetags.tag.corrupto
+  Saqueador:
+    order: 22
+    tag: '&7[&4Saqueador&7]'
+    description: '&fDonde pasas, solo quedan ruinas y cofres vacíos.'
+    permission: deluxetags.tag.saqueador
+  Caballero:
+    order: 23
+    tag: '&7[&9Caballero&7]'
+    description: '&fTu honor es más fuerte que el diamante.'
+    permission: deluxetags.tag.caballero
+  Rebelde:
+    order: 24
+    tag: '&7[&1Rebelde&7]'
+    description: '&fEmpezaste con nada y ahora dominas los mares.'
+    permission: deluxetags.tag.naufrago
+  Ilusionista:
+    order: 26
+    tag: '&7[&5Ilusionista&7]'
+    description: '&fLo que ves no siempre es real... o sí?'
+    permission: deluxetags.tag.ilusionista
+  Trotamundos:
+    order: 27
+    tag: '&7[&eTrotamundos&7]'
+    description: '&fNo hay bioma en el que no hayas puesto un pie.'
+    permission: deluxetags.tag.trotamundos
+  Sapo:
+    order: 28
+    tag: '&8✘#094a07&lSapo&8✘'
+    description: '&fEncerio?...'
+    permission: deluxetags.tag.sapo
